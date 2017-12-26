@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_main">#3f51b5</color>
+    <color name="color_mainDark">#303f9f</color>
+    <color name="color_convert">#FF4081</color>
+
+    <color name="level0_blacknear">#333333</color>
+    <color name="level1_gray_dark">#555555</color>
+    <color name="level2_gray_light">#999999</color>
+    <color name="level3_gray_light2">#eaeaea</color>
+    <color name="level4_gray_light3">#f7f7f7</color>
+    <color name="level4_gray_light4">#fefefe</color>
+    <color name="level5_white">#ffffff</color>
+
+    <color name="color_black">#000</color>
+    <color name='nice_drakGray'>#6f6f6f</color>
+    <color name="color_white">#fff</color>
+
+    <color name="color_1">#f2575b</color>
+    <color name="color_2">#f48443</color>
+    <color name="color_3">#f48400</color>
+
+    <color name="tt_error">#ff0000</color>
+    <color name="tt_success">#303f9f</color>
+    <color name="tt_info">#ffc000</color>
+    <color name="tt_warn">#ff4081</color>
+
+
+    <color name="titleColorStart">#2B54A2</color>
+    <color name="titleColorEnd">#426EB6</color>
+    <color name="divider">#0B3760</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#555555</color>
+    <color name="lighter_gray">#f9f9f9</color>
+    <color name="light_gray">#e5e5e5</color>
+    <color name="syncBg">#20ffffff</color>
+    <color name="orange">#FFC057</color>
+    <color name="rowdivider">#B5B5B5</color>
+    <color name="searchColorStart">#B5B5B5</color>
+    <color name="searchColorEnd">#E2E2E2</color>
+    <color name="appColor">#F8F8F8</color>
+    <color name="appMainColor">#3f51b5</color>
+    <color name="actionRowPressedColor">#10146BD3</color>
+    <color name="blue">#4c82dd</color>
+    <color name="red">#CD2626</color>
+    <color name="propItemBg">#dedede</color>
+    <color name="progressColor">#8edf11</color>
+
+    <color name="color_dark_gray">#333333</color>
+
+    <!-- Plan State-->
+
+    <color name="unfinishstate">#FFC057</color>
+
+    <color name="tv_orange">#ff9600</color>
+    <color name="bule_1">#0aabea</color>
+    <color name="bule_2">#0adce0</color>
+
+
+
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.infinity.jerry.securitysupport">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".common.app.CommonApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="14f2ee3a09" />
+        <!-- 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="4" />
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="004b6eca-f526-4763-b5f6-3e3eba70208d" />
+        <!-- 配置Bugly调试模式（true或者false）-->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
+
+        <activity android:name=".coal_security.ui.activity.MainActivity" />
+
+        <activity android:name=".common.ui.activity.LoginActivity">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".coal_security.ui.activity.company.CompanyListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity android:name=".coal_security.ui.activity.company.CompanyDetialActivity" />
+        <activity android:name=".coal_security.ui.activity.plans.PlanActivity" />
+        <activity
+            android:name=".coal_security.ui.activity.plans.PlanAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".coal_security.ui.activity.check.CheckNewActivity" />
+        <activity android:name=".coal_security.ui.activity.review.ReviewActivity" />
+        <activity android:name=".common.test.TestActivity" />
+        <activity
+            android:name=".coal_security.ui.activity.company.CompanyListActivityX"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".coal_security.ui.activity.check.CheckSubItemActivity" />
+        <activity
+            android:name=".coal_security.ui.activity.check.CheckDetailActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.SceneInspActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.review.ReviewDealActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".coal_security.ui.activity.review.ReviewNewActivity" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.ReviewAdviceActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".coal_security.ui.activity.low_case.LowMainActivity" />
+        <activity android:name=".coal_security.ui.activity.low_case.LowAddActivity" />
+        <activity android:name=".coal_security.ui.activity.low_case.LowCaseFlowActivity" />
+        <activity
+            android:name=".coal_security.ui.activity.low_case.LowDetailActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".common.otherstuff.law_rule.LawRuleActivity" />
+        <activity android:name=".common.otherstuff.law_rule.LawRuleSearchActivity" />
+        <activity android:name=".common.otherstuff.law_rule.LawRuleDetailActivity" />
+        <activity android:name=".common.otherstuff.standard.StandardActivity" />
+        <activity android:name=".common.otherstuff.firedistance.FireDistanceBuildingActivity" />
+        <activity android:name=".common.otherstuff.firedistance.FireDistanceActivity" />
+        <activity android:name=".common.otherstuff.firedistance.FireDistanceBuildingProperties" />
+        <activity android:name=".common.otherstuff.weihua.ChemicalSearchResultActivity" />
+        <activity android:name=".common.otherstuff.weihua.ChemicalsActivity" />
+        <activity android:name=".common.otherstuff.weihua.ChemicalFeatureActivity" />
+        <activity android:name=".common.otherstuff.weihua.ChemicalDetailActivity" />
+        <activity android:name=".common.otherstuff.seriousdanger.HazardSearchActivity" />
+        <activity android:name=".common.otherstuff.seriousdanger.HazardChooseActivity" />
+        <activity android:name=".common.otherstuff.seriousdanger.HazardActivity" />
+        <activity android:name=".common.otherstuff.accident.AccidentActivity" />
+        <activity android:name=".common.otherstuff.accident.AccidentDetailActivity" />
+        <activity android:name=".common.otherstuff.accident.AccidentListActivity" />
+
+        <activity android:name=".common.otherstuff.equipment.EquipmentActivity" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.InspEvidenceActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.SceneDealActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.CancelWorkOrderActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.CloseCoalActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.TempCancelLicActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.BeBetterAdviceActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.review.BeBetterAdviceActivityR"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.review.CancelWorkOrderActivityR"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.review.CloseCoalActivityR"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.review.SceneDealActivityR"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".coal_security.ui.activity.documents.review.TempCancelLicActivityR"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <activity android:name=".coal_security.constant.NewActivity"/>
+        <activity android:name=".coal_security.ui.activity.syn_review.ReviewSynDetailActivity" />
+        <activity android:name=".coal_security.ui.activity.syn_lawcase.LawCaseDetailActivity" />
+        <activity android:name=".coal_security.ui.activity.syn_lawcase.LawCaseActivity" />
+        <activity android:name=".coal_security.ui.activity.syn_check.CheckSynActivity" />
+        <activity android:name=".coal_security.ui.activity.syn_check.CheckSynHistoryActvitiy" />
+        <activity android:name=".coal_security.ui.activity.syn_check.CheckSynDetailActivity" />
+        <activity android:name=".coal_security.ui.activity.syn_review.ReviewSynActivity" />
+
+        <service android:name=".common.otherstuff.PDFDownloadService" />
+    </application>
+
+</manifest>

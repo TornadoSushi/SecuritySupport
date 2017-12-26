@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">煤监执法</string>
+    <string name="app_title">煤监执法</string>
+    <string name="get_imei">点此获得当前设备IMEI号</string>
+    <string name="user_name">用户名</string>
+    <string name="user_pwd">密码</string>
+    <string name="login">登录</string>
+    <string name="coal_super">煤监</string>
+    <string name="safty_super">安监</string>
+    <string name="search">搜索</string>
+    <string name="coal_company">煤炭企业</string>
+    <string name="enter_company_name">请输入公司名字</string>
+    <string name="base_info">基础信息</string>
+    <string name="propri_info">专有信息</string>
+    <string name="add_plan">添加计划</string>
+    <string name="my_plan">我的计划</string>
+
+    <string name="coal_pro">矿井生产设备</string>
+    <string name="coal_safty">矿井安全设备</string>
+    <string name="coal_door">矿井井口信息</string>
+    <string name="coal_shaft">井筒和开采煤层</string>
+    <string name="coal_six">六大系统</string>
+    <string name="not_start">未开始</string>
+    <string name="doing">进行中</string>
+    <string name="finished">已完成</string>
+    <string name="no_plan_name">未填写计划名字</string>
+    <string name="full_safty_check">全面安全检查</string>
+    <string name="temp_safty_check">临时安全检查</string>
+    <string name="full_health_check">全面职业卫生检查</string>
+    <string name="temp_health_check">临时职业卫生检查</string>
+    <string name="start_time">开始时间:</string>
+    <string name="end_time">结束时间:</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="ensure_start_plan">您是否要开始这个计划</string>
+    <string name="temp_plan">临时计划</string>
+    <string name="nodanger_finish">无隐患方式完成所有项</string>
+    <string name="not_finish">未完成</string>
+    <string name="check_time">检查时间:</string>
+
+
+</resources>

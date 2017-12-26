@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dip">
+
+        <View
+            android:layout_width="4dip"
+            android:layout_height="15dip"
+            android:background="@color/level3_gray_light2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="理化特征"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/chemicalFeatureLHGV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="5dip"
+        android:numColumns="3"
+        android:paddingTop="5dip"
+        android:verticalSpacing="10dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dip">
+
+        <View
+            android:layout_width="4dip"
+            android:layout_height="15dip"
+            android:background="@color/level3_gray_light2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="健康危害"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/chemicalFeatureJKGV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="5dip"
+        android:numColumns="3"
+        android:paddingTop="5dip"
+        android:verticalSpacing="10dip" />
+
+    <TextView
+        android:id="@+id/chemicalFeatureSearchTV"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/main_btn_background"
+        android:gravity="center"
+        android:text="查询"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar
+        android:layout_width="match_parent"
+        android:id="@+id/titleBar"
+        android:layout_height="@dimen/actionBar_height">
+
+    </com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="受检企业:"
+                    android:textColor="@color/color_dark_gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/edInspItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查人:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议告知对象:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_telling"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议报送至:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:maxLength="80"
+                    android:id="@+id/ed_baosong"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvPrint"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appMainColor"
+        android:gravity="center"
+        android:text="打印文书"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_2" />
+
+
+</LinearLayout>

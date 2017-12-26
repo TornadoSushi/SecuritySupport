@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar_height">
+
+    </com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/nice_drakGray"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/normal_dis"
+        android:text="情况描述:"
+        android:textColor="@color/color_white" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="描述"
+        android:id="@+id/edDescri"
+        android:padding="@dimen/normal_dis"
+        android:textSize="@dimen/textSize_3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:id="@+id/addDoc"
+        android:text="+ 添加文书"
+        android:textColor="@color/color_convert" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/color_convert" />
+
+    <ListView
+        android:layout_marginTop="@dimen/middle_dis"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout>

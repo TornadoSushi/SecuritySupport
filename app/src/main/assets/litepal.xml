@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="safty_security" />
+
+    <version value="14" />
+
+    <list>
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.CompanyCoalEntity" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.CompanyBaseInfo" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.CompanyProduct" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.CompanySafty" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.CompanyDoor" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.CompanyShaft" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.CompanySixSys" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.CoalCheckItem" />
+
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.PlanRecord" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.PlanCheckedItem" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.PlanToDocEntity" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.CheckItemRecord" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.ReviewToDocEntity" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.ReviewRecord" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.LowCaseRecord" />
+        <mapping class="com.infinity.jerry.securitysupport.common.entity.LowCaseMedia" />
+
+        <mapping class="com.infinity.jerry.securitysupport.coal_security.entity.SceneInspEntity" />
+        <mapping class="com.infinity.jerry.securitysupport.coal_security.entity.SceneDealDecide" />
+        <mapping class="com.infinity.jerry.securitysupport.coal_security.entity.ReViewAdviceDoc" />
+        <mapping class="com.infinity.jerry.securitysupport.coal_security.entity.InspEvidence" />
+        <mapping class="com.infinity.jerry.securitysupport.coal_security.entity.CancelOrder" />
+        <mapping class="com.infinity.jerry.securitysupport.coal_security.entity.TempCancelLic" />
+        <mapping class="com.infinity.jerry.securitysupport.coal_security.entity.BeBetterAdvice" />
+        <mapping class="com.infinity.jerry.securitysupport.coal_security.entity.CloseCoalDecide" />
+    </list>
+
+</litepal>

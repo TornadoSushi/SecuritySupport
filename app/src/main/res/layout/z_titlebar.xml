@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar_height"
+        app:cardBackgroundColor="@color/color_main"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/lower_dis">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imBack"
+                style="@style/backPress_style" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/textView_title"
+                android:text="@string/app_title" />
+
+            <TextView
+                android:id="@+id/tv_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/normal_dis"
+                android:gravity="center"
+                android:paddingLeft="@dimen/middle_dis"
+                android:paddingRight="@dimen/middle_dis"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textSize_3" />
+
+            <ImageView
+                android:id="@+id/im_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/normal_dis"
+                android:paddingLeft="@dimen/middle_dis"
+                android:paddingRight="@dimen/middle_dis"
+                android:scaleType="centerInside" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

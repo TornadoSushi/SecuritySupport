@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBar_height"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/normal_dis"
+        android:singleLine="true"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/textSize_2" />
+
+    <TextView
+        android:id="@+id/tvPlus"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/middle_dis"
+        android:layout_marginLeft="@dimen/normal_dis"
+        android:layout_marginRight="@dimen/normal_dis"
+        android:layout_marginTop="@dimen/middle_dis"
+        android:background="@drawable/shape_check_item"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/textSize_3"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

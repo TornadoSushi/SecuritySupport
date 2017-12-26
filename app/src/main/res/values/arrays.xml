@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hazard_categories">
+        <item>爆炸品</item>
+        <item>易燃气体</item>
+        <item>氧化性气体</item>
+        <item>毒性气体</item>
+        <item>易燃液体</item>
+        <item>易燃固体</item>
+        <item>易于自燃的物质</item>
+        <item>遇水放出易燃气体的物质</item>
+        <item>氧化性物质</item>
+        <item>有机过氧化物</item>
+        <item>毒性物质</item>
+    </string-array>
+
+    <string-array name="case_steps">
+        <item>立案审批</item>
+        <item>调查取证</item>
+        <item>案件报批</item>
+        <item>事先告知</item>
+        <item>陈述申辩及听证</item>
+        <item>复审确认</item>
+        <item>处罚执行</item>
+        <item>结案备案</item>
+    </string-array>
+
+    <string-array name="case_items">
+        <item>立案审批表</item>
+        <item>调查取证</item>
+        <item>案件报批</item>
+        <item>事先告知</item>
+        <item>陈述申辩及听证</item>
+        <item>复审确认</item>
+        <item>处罚执行</item>
+        <item>结案备案</item>
+    </string-array>
+</resources>

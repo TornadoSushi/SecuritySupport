@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar_height">
+
+    </com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/nice_drakGray"
+        android:gravity="center"
+        android:text="立案办理流程"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/textSize_2" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/normal_dis">
+
+    </GridView>
+
+</LinearLayout>

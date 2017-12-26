@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar_height">
+
+    </com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/little_height"
+        android:background="@color/nice_drakGray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNotStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/not_start"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/textSize_3" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/middle_dis"
+            android:layout_marginTop="@dimen/middle_dis"
+            android:background="@color/color_white" />
+
+        <TextView
+            android:id="@+id/tvDoing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/doing"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/textSize_3" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/middle_dis"
+            android:layout_marginTop="@dimen/middle_dis"
+            android:background="@color/color_white" />
+
+
+        <TextView
+            android:id="@+id/tvFinished"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/finished"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/textSize_3" />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+
+
+    <TextView
+        android:id="@+id/tvAddPlan"
+        style="@style/text_btn_bottom"
+        android:text="@string/add_plan" />
+
+
+</LinearLayout>

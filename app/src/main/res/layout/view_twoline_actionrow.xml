@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <TextView
+        android:id="@+id/rowPrimaryTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_black"
+        android:textSize="16sp"
+        tools:text="Test PlaceHolder" />
+
+
+    <TextView
+        android:id="@+id/rowSecondaryTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="3dip"
+        android:textColor="@color/level1_gray_dark"
+        android:textSize="13sp"
+        tools:text="Test PlaceHolder" />
+</LinearLayout>

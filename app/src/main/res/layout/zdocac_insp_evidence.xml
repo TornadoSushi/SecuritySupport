@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar
+        android:layout_width="match_parent"
+        android:id="@+id/titleBar"
+        android:layout_height="@dimen/actionBar_height">
+
+    </com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="受检企业:"
+                    android:textColor="@color/color_dark_gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/edInspItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+            normal_dis
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地点:"
+                    android:textColor="@color/color_dark_gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="调查事由:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_insp_content"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="未填写"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:text="被调查人信息"
+                android:paddingLeft="15dp"
+                android:textSize="@dimen/textSize_2"
+                android:layout_height="40dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/edName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="未填写"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="30dp">
+                <RadioGroup
+                    android:id="@+id/rg_gender"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="30dp">
+
+                    <RadioButton
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/rb_man"
+                        android:layout_width="0dp"
+                        android:checked="true"
+                        android:layout_weight="1"
+                        android:text="男"
+                        android:layout_height="match_parent" />
+
+                    <RadioButton
+                        android:id="@+id/rb_woman"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:text="女"
+                        android:layout_height="match_parent" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="年龄"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:paddingLeft="10dp"
+                    android:id="@+id/ed_age"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:textSize="@dimen/textSize_4"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工作单位:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_work_place"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_dis"
+                android:background="@color/lighter_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职务(职业):"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_duty"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="政治面貌:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_protical"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文化程度:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_level"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_phone"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rowdivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="住址:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_address"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_dis"
+                android:background="@color/lighter_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查人:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_invest_man"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_dis"
+                android:background="@color/lighter_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="记录人:"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_invest_record"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvPrint"
+        android:layout_width="match_parent"
+        android:text="打印文书"
+        android:gravity="center"
+        android:textSize="@dimen/textSize_2"
+        android:textColor="@color/white"
+        android:background="@color/appMainColor"
+        android:layout_height="50dp" />
+
+
+</LinearLayout>

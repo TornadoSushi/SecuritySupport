@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/normal_dis"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/superName"
+        android:textColor="@color/color_main"
+        android:textSize="@dimen/textSize_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/subName"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:textColor="@color/color_convert"
+        android:textSize="@dimen/textSize_2"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/textSize_3"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/desri"
+        android:gravity="center_vertical"
+        android:textColor="@color/level1_gray_dark"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/textSize_3"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/lowPunish"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textSize_3"
+        android:textColor="@color/level2_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/person"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textSize_3"
+        android:textColor="@color/color_black"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+
+</LinearLayout>

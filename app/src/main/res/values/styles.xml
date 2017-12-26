@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="backPress_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/higher_dis</item>
+        <item name="android:paddingRight">@dimen/higher_dis</item>
+        <item name="android:src">@mipmap/tms_icon_back</item>
+    </style>
+
+    <style name="textView_title">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/textSize_1</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>o
+
+    <style name="text_btn_bottom">
+        <item name="android:layout_height">@dimen/actionBar_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:background">@color/color_main</item>
+        <item name="android:textSize">@dimen/textSize_2</item>
+
+    </style>
+
+
+</resources>

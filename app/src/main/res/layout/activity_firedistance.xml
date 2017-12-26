@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/firedistance_building_item_bg"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主要建筑"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/mainBuildingLL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/mainBuildingTV"
+                    android:layout_width="220dip"
+                    android:layout_height="match_parent"
+                    android:ellipsize="start"
+                    android:gravity="center_horizontal"
+                    android:hint="请选择"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="20dip"
+                    android:paddingTop="5dip"
+                    android:src="@drawable/forward" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/firedistance_building_item_bg"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="相邻建筑"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/nearbyBuildingLL"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nearbyBuildingTV"
+                    android:layout_width="220dip"
+                    android:layout_height="match_parent"
+                    android:ellipsize="start"
+                    android:gravity="center_horizontal"
+                    android:hint="请先选择主要建筑"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="25dip"
+                    android:layout_height="20dip"
+                    android:paddingTop="5dip"
+                    android:src="@drawable/forward" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/calcFireDistanceBTN"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/main_btn_background"
+            android:paddingLeft="40dip"
+            android:paddingRight="40dip"
+            android:text="计算防火间距"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/buildingCalcLL"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/buildingCalcRetLL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/buildingCalcRetTV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GB50016-2006 建筑设计防火规范:" />
+
+                    <TextView
+                        android:id="@+id/buildingCalcRetCommentsTV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="查无规范"
+                        android:textSize="18dip" />
+
+                    <RelativeLayout
+                        android:id="@+id/buildingCalcRetCommentRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <Button
+                            android:id="@+id/buildingCalcRetCommentBtn"
+                            android:layout_width="60dip"
+                            android:layout_height="40dip"
+                            android:text="注释" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="25dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/rowdivider" />
+
+            <LinearLayout
+                android:id="@+id/oilBuildingCalcLL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/oilBuildingCalcRetTV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GB50160-2008 石油化工企业设计防火规范:" />
+
+                    <TextView
+                        android:id="@+id/oilBuildingCalcRetCommentsTV"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="查无规范"
+                        android:textSize="18dip" />
+
+                    <RelativeLayout
+                        android:id="@+id/oilBuildingCalcRetCommentRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <Button
+                            android:id="@+id/oilBuildingCalcRetCommentBtn"
+                            android:layout_width="60dip"
+                            android:layout_height="40dip"
+                            android:text="注释" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtRemark"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:gravity="center"
+                android:text="请尽可能完整地填写建筑属性，以便计算间距" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

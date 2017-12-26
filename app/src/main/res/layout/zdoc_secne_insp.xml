@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar
+        android:layout_width="match_parent"
+        android:id="@+id/titleBar"
+        android:layout_height="@dimen/actionBar_height">
+
+    </com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="受检企业:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/edInspItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/nice_drakGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查场所:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/edPlace"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="未填写"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_dis"
+                android:background="@color/level3_gray_light2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_time"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/edTime"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="未填写"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/nice_drakGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查路线:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/edLine"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_dis"
+                android:background="@color/level3_gray_light2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="采矿许可证:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_mining_lic"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/nice_drakGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安全资格证:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_masSafty_lic"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/nice_drakGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="矿长资格证:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_mas_certi"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/nice_drakGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安全生产许可证:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_safty_lic"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/nice_drakGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="煤炭生产许可证:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_coal_lic"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_dis"
+                android:background="@color/level3_gray_light2" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="陪同检查人员:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_comp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_dis"
+                android:background="@color/level3_gray_light2
+" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查情况:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_content"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_dis"
+                android:background="@color/level3_gray_light2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/normal_dis">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="被检查单位负责人意见:"
+                    android:textColor="@color/level1_gray_dark"
+                    android:textSize="@dimen/textSize_2" />
+
+                <EditText
+                    android:id="@+id/ed_advice"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_dis"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="56"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textSize_2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvPrint"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_main"
+        android:gravity="center"
+        android:text="打印文书"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/textSize_2" />
+
+</LinearLayout>

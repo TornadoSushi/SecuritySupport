@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@color/nice_drakGray"
+            android:text="请完成检查相关项再添加文书"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tvAddDoc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="+  添加文书"
+            android:layout_marginLeft="@dimen/normal_dis"
+            android:layout_marginRight="@dimen/normal_dis"
+            android:textColor="@color/color_convert"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@color/color_convert" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ListView
+                android:layout_marginTop="@dimen/middle_dis"
+                android:id="@+id/listView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbars="none">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/tvShowDanger"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/doc_right_text"
+                android:ems="1"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="查看已有隐患"
+                android:textColor="@color/color_white"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/coverFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:visibility="gone"
+        >
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_doc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="已检查到到隐患项"
+            android:textColor="@color/nice_drakGray"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#efefef" />
+
+
+        <ListView
+            android:id="@+id/listViewX"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#efefef" />
+
+        <TextView
+            android:id="@+id/tvCloseCover"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="关闭  ————->  "
+            android:textSize="12sp"
+            android:textColor="@color/color_convert" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

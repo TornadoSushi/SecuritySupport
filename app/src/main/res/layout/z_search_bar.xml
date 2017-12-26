@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <EditText
+        android:id="@+id/edSearch"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@android:drawable/editbox_background_normal"
+        android:paddingLeft="@dimen/normal_dis"
+        android:textSize="@dimen/textSize_1" />
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/middle_dis"
+        android:background="@drawable/small_btn_background"
+        android:gravity="center"
+        android:text="@string/search"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/textSize_3" />
+
+</LinearLayout>

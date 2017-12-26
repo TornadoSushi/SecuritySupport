@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar
+        android:layout_width="match_parent"
+        android:id="@+id/titleBar"
+        android:layout_height="@dimen/actionBar_height">
+
+    </com.infinity.jerry.securitysupport.common.z_utils.z_widget.ZTitleBar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/nice_drakGray"
+        android:layout_height="@dimen/little_height">
+
+        <TextView
+            android:id="@+id/tv_baseInfo"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_main"
+            android:textSize="16sp"
+            android:text="@string/base_info"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvPropInfo"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:text="@string/propri_info"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
